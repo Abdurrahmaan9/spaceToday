@@ -1,6 +1,7 @@
 import React from "react";
 
-function Footer() {
+function Footer(props) {
+  const { showModel, handleSideDisplayModel } = props;
   return (
     <>
       <footer>
@@ -9,7 +10,7 @@ function Footer() {
           <h2>picture title</h2>
           <h1>APOD Project</h1>
         </div>
-        <button>
+        <button onClick={handleSideDisplayModel}>
           <i className="fa-solid fa-circle-info"></i>
         </button>
       </footer>
