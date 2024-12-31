@@ -1,22 +1,18 @@
-import React from "react";
-
-function SideBar(props) {
-  const { handleSideDisplayModel } = props;
+export default function SideBar(props) {
+  const { handleToggleModal, data } = props
   return (
-    <div className="sidebar">
-      <div onClick={handleSideDisplayModel} className="bgOverlay"></div>
-      <div className="sidebarContents">
-        <h2>{data?.title}</h2>
-        <div className="descriptionContainer">
-          <p className="descriptionTitle">{data?.date}</p>
-          <p>{data?.explanation}</p>
-        </div>
-        <button onClick={handleSideDisplayModel}>
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
+      <div className="sidebar">
+          <div onClick={handleToggleModal} className="bgOverlay"></div>
+          <div className="sidebarContents">
+              <h2>{data?.title}</h2>
+              <div className="descriptionContainer">
+                  <p className="descriptionTitle">{data?.date}</p>
+                  <p>{data?.explanation}</p>
+              </div>
+              <button onClick={handleToggleModal}>
+                  <i className="fa-solid fa-arrow-right"></i>
+              </button>
+          </div>
       </div>
-    </div>
-  );
+  )
 }
-
-export default SideBar;
