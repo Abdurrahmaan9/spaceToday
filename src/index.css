@@ -85,7 +85,7 @@
   margin-right: auto;
   cursor: pointer;
   transition-duration: 200ms;
-  padding: 1rem;
+  padding: 1rem 0;
 
 }
 
@@ -95,6 +95,22 @@
 
 .sidebarContents button:hover {
   opacity: 0.5;
+}
+
+.sidebarContents h2 {
+  font-weight: 200;
+  font-size: 1.4rem;
+}
+
+.decriptionTitle {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .loadingState {
@@ -135,6 +151,7 @@ footer div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  
 }
 
 footer h2 {
